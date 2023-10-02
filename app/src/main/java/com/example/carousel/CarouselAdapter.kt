@@ -31,9 +31,9 @@ class CarouselAdapter(private val list: ArrayList<Model>,val context:Context) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        val list = list[position]
-        holder.binding.carouselImageView.setImageResource(list.image)
-        holder.binding.nametext.text=list.name
+        val itemlist = list[position]
+        holder.binding.carouselImageView.setImageResource(itemlist.image)
+        holder.binding.nametext.text=itemlist.name
     }
 
     override fun getItemCount() = list.size

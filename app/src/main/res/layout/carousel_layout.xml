@@ -8,30 +8,31 @@
     android:layout_marginStart="4dp"
     android:layout_marginEnd="4dp"
     android:foreground="?attr/selectableItemBackground"
-    app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+    app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge"
+    >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
 
                 <ImageView
                     android:id="@+id/carousel_image_view"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="77dp" />
+                    android:src="@drawable/nature"
+                    />
 
                 <TextView
                     android:id="@+id/nametext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginStart="56dp"
                     android:layout_marginBottom="15dp"
                     android:fontFamily="sans-serif-black"
                     android:text="Name "
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="18dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
