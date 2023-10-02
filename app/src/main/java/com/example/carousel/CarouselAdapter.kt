@@ -20,10 +20,7 @@ class CarouselAdapter(private val list: ArrayList<Model>,val context:Context) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-//        val view = LayoutInflater.from(viewGroup.context)
-//            .inflate(R.layout.carousel_layout, viewGroup, false)
-//
-//        return ViewHolder(view)
+
 
         val binding = CarouselLayoutBinding
             .inflate(LayoutInflater.from(context), parent, false)
@@ -32,8 +29,11 @@ class CarouselAdapter(private val list: ArrayList<Model>,val context:Context) :
 
     }
 
-    override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
+        val list = list[position]
+        holder.binding.carouselImageView.setImageResource(list.image)
+        holder.binding.nametext.text=list.name
     }
 
     override fun getItemCount() = list.size
