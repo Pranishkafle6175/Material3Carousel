@@ -7,6 +7,10 @@ android {
     namespace 'com.example.carousel'
     compileSdk 33
 
+    buildFeatures{
+        viewBinding=true
+    }
+
     defaultConfig {
         applicationId "com.example.carousel"
         minSdk 24
